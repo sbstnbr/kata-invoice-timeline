@@ -1,14 +1,13 @@
 import React from 'react';
-import { gql, graphql, Query } from 'react-apollo';
+import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 
-// const myQuery = gql`{ hello }`;
-
+const myQuery = gql `{ hello }`;
 
 class App extends React.Component {
   render() {
-    return <HelloWorld/>
+    return <h1>{this.props.data.hello}</h1>
   }
 }
 
-// export default graphql(myQuery)(App)
-export default App
+export default graphql(myQuery)(App);
