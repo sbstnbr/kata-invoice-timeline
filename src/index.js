@@ -7,7 +7,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3001'
+  uri: 'https://kata-invoice-timeline-graphql-pixfvdqjyp.now.sh'
 });
 
 render(
